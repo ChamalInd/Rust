@@ -61,6 +61,11 @@ fn print(arr: [i32; 10]) {
 }
 
 fn peek(arr: [i32; 10], top: usize) {
+    if top == 0 {
+        println!("Stack is empty...\n");
+        return;
+    }
+
     println!("Value at top: {}\n", arr[top - 1]);
 }
 
